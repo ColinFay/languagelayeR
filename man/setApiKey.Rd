@@ -7,10 +7,10 @@
 setApiKey(apikey)
 }
 \arguments{
-\item{apikey}{the API key you can get from your languagelayer dashboard at \url{https://languagelayer.com/dashboard}.}
+\item{apikey}{You can find your API key on your dashboard at \url{https://languagelayer.com/dashboard}.}
 }
 \description{
-Set your API key to access the languagelayer API
+Set your API key.
 }
 \details{
 Takes a character string containing your API key.
