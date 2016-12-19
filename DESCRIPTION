@@ -1,13 +1,13 @@
 Package: languagelayeR
 Type: Package
-Title: Access the languagelayer <https://languagelayer.com> API
+Title: Access the languagelayer API <https://languagelayer.com>
 Version: 1.0.0
 Date: 2016-12-06
 Author: Colin FAY
 Maintainer: Colin FAY <contact@colinfay.me>
 Description: Improve your text analysis with languagelayer
         <https://languagelayer.com>, a powerful language detection
-        API extracting languages from a character string.
+        API.
 License: GPL-3
 LazyData: TRUE
 Imports: httr, rjson, magrittr
