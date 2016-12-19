@@ -1,11 +1,11 @@
 #'Get supported languages
 #'
-#'Get all current accessible languages on the languagelayer API
+#'Get all current available languages on the languagelayer API.
 #'
-#'Takes your api key, returns a data.frame with the available values.
+#'Returns a data.frame with the available languages.
 #'@return Returns a data.frame with language_code and language_name.
 #'@export
-#'@note Before running one function of this package for the first time, you need to set your API key using the \code{\link{setApiKey}} function.
+#'@note Before running a function of this package for the first time, you need to set your API key using the \code{\link{setApiKey}} function.
 #'@examples
 #'getSupportedLanguage()
 

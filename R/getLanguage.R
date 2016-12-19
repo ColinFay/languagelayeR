@@ -1,15 +1,15 @@
 #'Get language
 #'
-#'Extract a language from a character string by accessing the languagelayer API
+#'Detect language from a character string.
 #'
-#'Takes your api key and an character string, returns a data.frame with the available values.
-#'@param query the character string you want to extract the language from.
-#'@return Returns a data.frame with, in descending order of probability : language_code, language_name, probability (length of the provided query text and how well it is identified as a language), percentage (confidence margin between multiple matches), and reliable_result (whether or not the API is completely confident about the main match).
+#'Takes a character string, returns a data.frame with the available values.
+#'@param query the character string you want to detect the language from.
+#'@return Returns a data.frame with the detected languages, in descending order of probability. Values are : language_code, language_name, probability (length of the provided query text and how well it is identified as a language), percentage (confidence margin between multiple matches), and reliable_result (whether or not the API is completely confident about the main match).
 #'@export
 #'@importFrom magrittr %>%
 #'@importFrom httr GET
 #'@importFrom rjson fromJSON
-#'@note Before running one function of this package for the first time, you need to set your API key using the \code{\link{setApiKey}} function.
+#'@note Before running a function of this package for the first time, you need to set your API key using the \code{\link{setApiKey}} function.
 #'@examples
 #'getLanguage(query = "I really really love R and that's a good thing, right?")
 
