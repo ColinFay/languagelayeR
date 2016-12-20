@@ -1,6 +1,6 @@
 Package: languagelayeR
 Type: Package
-Title: Access the languagelayer API <https://languagelayer.com>
+Title: Access the 'languagelayer' API
 Version: 1.0.0
 Date: 2016-12-06
 Author: Colin FAY
