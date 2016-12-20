@@ -1,4 +1,4 @@
-Access the languagelayer API with R
+languagelayeR is now on [CRAN](https://CRAN.R-project.org/package=languagelayeR)
 
 # languagelayerR
 
