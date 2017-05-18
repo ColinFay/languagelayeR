@@ -12,6 +12,14 @@ This package offers a language detection tool by connecting to the languagelayer
 
 Install this package directly in R : 
 
+From CRAN : 
+
+```{r}
+install.packages("languagelayeR")
+```
+
+From Github :
+
 ```{r}
 devtools::install_github("ColinFay/languagelayerR")
 ```
