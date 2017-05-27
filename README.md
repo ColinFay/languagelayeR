@@ -21,7 +21,7 @@ install.packages("languagelayeR")
 From Github :
 
 ```{r}
-devtools::install_github("ColinFay/languagelayerR")
+devtools::install_github("ColinFay/languagelayeR")
 ```
 
 ## How languagelayeR works
