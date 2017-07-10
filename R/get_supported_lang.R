@@ -3,13 +3,14 @@
 #'Get all current available languages on the languagelayer API.
 #'
 #'Returns a data.frame with the available languages.
+#'@param api_key Your API key.
 #'@return Returns a data.frame with language_code and language_name.
 #'@export
 #'@note Before running a function of this package for the first time, you need to set your API key using the \code{\link{setApiKey}} function.
 #'@examples
-#'getSupportedLanguage()
+#'get_supported_lang(api_key = "yourapikey")
 
-getSupportedLanguage <- function(){
+get_supported_lang <- function(api_key){
   . <- NULL
   default <- data.frame(language_code = vector("character"),
                         language_name = vector("character"),
@@ -44,5 +45,10 @@ getSupportedLanguage <- function(){
     }
   }
   return(identity)
+}
+
+getSupportedLanguage <- function(...){
+  .Deprecated("get_supported_lang")
+  get_supported_lang(...)
 }
 
