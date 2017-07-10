@@ -8,6 +8,7 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+
 # languagelayerR
 
 This package is designed to detect a language from a character string in R by acessing the languagelayer API — https://languagelayer.com/
