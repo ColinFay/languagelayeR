@@ -28,17 +28,14 @@ devtools::install_github("ColinFay/languagelayeR")
 
 The version 1.0.0 works with three functions. Which are :  
 
-* `getLanguage` Get language information from a character string
+* `get_lang` Get language information from a character string
 
-* `getSupportedLanguage` Get all current accessible languages on the languagelayer API
+* `get_supported_lang` Get all current accessible languages on the languagelayer API
 
-* `setApiKey` Set your API key to access the languagelayer API
 
 ## First of all
 
-Before any request on the languagelayer, you need to set your API key for your current session. Use the function `setApiKey(apikey = "yourapikey")`. 
-
-You can get your api key on your languagelayer [dashboard](https://languagelayer.com/dashboard).
+Before any request on the languagelayer, you need to get your API key from your language layer [dashboard](https://languagelayer.com/dashboard).
 
 ## Examples 
 
@@ -47,7 +44,7 @@ You can get your api key on your languagelayer [dashboard](https://languagelayer
 Detect a language from a character string. 
 
 ```{r}
-getLanguage(query = "I really really love R and that's a good thing, right?")
+get_lang(query = "I really really love R and that's a good thing, right?")
 ```
 
 ### getSupportedLanguage 
@@ -55,7 +52,7 @@ getLanguage(query = "I really really love R and that's a good thing, right?")
 List all the languages available on the languagelayer API. 
 
 ```{r}
-getSupportedLanguage()
+get_supported_lang()
 ```
 
 ### Contact
