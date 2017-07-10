@@ -44,7 +44,7 @@ Before any request on the languagelayer, you need to get your API key from your 
 Detect a language from a character string. 
 
 ```{r}
-get_lang(query = "I really really love R and that's a good thing, right?")
+get_lang(query = "I really really love R and that's a good thing, right?", api_key = "your_api_key")
 ```
 
 ### getSupportedLanguage 
@@ -52,7 +52,7 @@ get_lang(query = "I really really love R and that's a good thing, right?")
 List all the languages available on the languagelayer API. 
 
 ```{r}
-get_supported_lang()
+get_supported_lang(api_key = "your_api_key")
 ```
 
 ### Contact
