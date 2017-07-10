@@ -15,7 +15,3 @@ Set your API key.
 \details{
 Takes a character string containing your API key.
 }
-\examples{
-setApiKey(apikey = "yourapikey")
-}
-
