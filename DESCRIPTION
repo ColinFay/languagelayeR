@@ -8,9 +8,13 @@ Maintainer: Colin FAY <contact@colinfay.me>
 Description: Improve your text analysis with languagelayer
         <https://languagelayer.com>, a powerful language detection
         API.
+URL: https://github.com/ColinFay/languagelayer
+BugReports: https://github.com/ColinFay/languagelayer/issues
 License: GPL-3
 LazyData: TRUE
-Imports: httr, rjson, magrittr
+Imports: httr, 
+    rjson, 
+    magrittr
 RoxygenNote: 6.0.1
 Suggests: testthat,
     knitr,

@@ -9,6 +9,8 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
+languagelayeR is now on [CRAN](https://CRAN.R-project.org/package=languagelayeR)
+
 # languagelayerR
 
 This package is designed to detect a language from a character string in R by acessing the languagelayer API — https://languagelayer.com/
@@ -23,13 +25,13 @@ Install this package directly in R :
 
 From CRAN : 
 
-```{r eval = FALSE}
+```{r}
 install.packages("languagelayeR")
 ```
 
 From Github :
 
-```{r eval = FALSE}
+```{r}
 devtools::install_github("ColinFay/languagelayeR")
 ```
 
@@ -52,16 +54,16 @@ Before any request on the languagelayer, you need to get your API key from your 
 
 Detect a language from a character string. 
 
-```{r eval = FALSE}
-get_lang(query = "I really really love R and that's a good thing, right?")
+```{r}
+get_lang(query = "I really really love R and that's a good thing, right?", api_key = "your_api_key")
 ```
 
 ### getSupportedLanguage 
 
 List all the languages available on the languagelayer API. 
 
-```{r eval = FALSE}
-get_supported_lang()
+```{r}
+get_supported_lang(api_key = "your_api_key")
 ```
 
 ### Contact
