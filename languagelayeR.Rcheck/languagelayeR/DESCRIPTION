@@ -1,0 +1,23 @@
+Package: languagelayeR
+Type: Package
+Title: Access the 'languagelayer' API
+Version: 1.1.0
+Date: 2017-07-10
+Authors@R: person("Colin", "FAY", email = "contact@colinfay.me", role = c("aut", "cre"))
+Maintainer: Colin FAY <contact@colinfay.me>
+Description: Improve your text analysis with languagelayer
+        <https://languagelayer.com>, a powerful language detection
+        API.
+URL: https://github.com/ColinFay/languagelayer
+BugReports: https://github.com/ColinFay/languagelayer/issues
+License: GPL-3
+LazyData: TRUE
+Imports: httr, rjson, magrittr
+RoxygenNote: 6.0.1.9000
+Suggests: testthat, knitr, rmarkdown
+ByteCompile: true
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-07-18 11:54:02 UTC; colin
+Author: Colin FAY [aut, cre]
+Built: R 3.4.0; ; 2017-07-18 11:54:20 UTC; unix

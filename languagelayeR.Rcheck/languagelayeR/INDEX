@@ -1,0 +1,6 @@
+getLanguage             Deprecated version of get_lang
+getSupportedLanguage    Deprecated version of get_supported_lang
+get_lang                Get language
+get_supported_lang      Get supported languages
+languagelayeR           languagelayeR
+setApiKey               Deprecrated function
