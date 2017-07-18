@@ -8,6 +8,7 @@ devtools::use_testthat()
 #Use news 
 
 devtools::use_build_ignore("NEWS.md")
+devtools::use_build_ignore("README.md")
 
 #Use vignette
 
