@@ -23,19 +23,19 @@ Install this package directly in R :
 
 From CRAN : 
 
-```{r}
+```{r eval = FALSE}
 install.packages("languagelayeR")
 ```
 
 From Github :
 
-```{r}
+```{r eval = FALSE}
 devtools::install_github("ColinFay/languagelayeR")
 ```
 
 ## How languagelayeR works
 
-The version 1.0.0 works with three functions. Which are :  
+The version 1.1.0 works with two functions. Which are :  
 
 * `get_lang` Get language information from a character string
 
@@ -52,7 +52,7 @@ Before any request on the languagelayer, you need to get your API key from your 
 
 Detect a language from a character string. 
 
-```{r}
+```{r eval = FALSE}
 get_lang(query = "I really really love R and that's a good thing, right?", api_key = "your_api_key")
 ```
 
@@ -60,10 +60,10 @@ get_lang(query = "I really really love R and that's a good thing, right?", api_k
 
 List all the languages available on the languagelayer API. 
 
-```{r}
+```{r eval = FALSE}
 get_supported_lang(api_key = "your_api_key")
 ```
 
 ### Contact
 
-Questions and feedbacks [welcome](mailto:contact@colinfay.me) !
+Questions and feedbacks [welcome](mailto:contact@colinfay.me)!

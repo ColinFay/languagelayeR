@@ -26,7 +26,7 @@ devtools::install_github("ColinFay/languagelayeR")
 
 ## How languagelayeR works
 
-The version 1.0.0 works with three functions. Which are :  
+The version 1.1.0 works with two functions. Which are :  
 
 * `get_lang` Get language information from a character string
 
