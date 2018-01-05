@@ -21,7 +21,7 @@ Detect language from a character string.
 Takes a character string, returns a data.frame with the available values.
 }
 \note{
-Before running a function of this package for the first time, you need to set your API key using the \code{\link{setApiKey}} function.
+Before running a function of this package for the first time, you need to set your API key.
 }
 \examples{
 get_lang(query = "I really really love R and that's a good thing, right?", api_key = "apikey")

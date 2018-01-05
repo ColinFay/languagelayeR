@@ -1,8 +1,8 @@
 Package: languagelayeR
 Type: Package
 Title: Access the 'languagelayer' API
-Version: 1.1.0
-Date: 2017-07-10
+Version: 1.2.0
+Date: 2018-01-05
 Authors@R: person("Colin", "FAY", email = "contact@colinfay.me", role = c("aut", "cre"))
 Maintainer: Colin FAY <contact@colinfay.me>
 Description: Improve your text analysis with languagelayer
@@ -10,14 +10,17 @@ Description: Improve your text analysis with languagelayer
         API.
 URL: https://github.com/ColinFay/languagelayer
 BugReports: https://github.com/ColinFay/languagelayer/issues
-License: GPL-3
+License: MIT + file LICENSE
 LazyData: TRUE
 Imports: httr, 
     rjson, 
-    magrittr
+    attempt, 
+    curl
 RoxygenNote: 6.0.1.9000
-Suggests: testthat,
+Suggests: 
+    testthat,
     knitr,
-    rmarkdown
+    rmarkdown,
+    covr
 ByteCompile: true
 VignetteBuilder: knitr

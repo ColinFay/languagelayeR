@@ -1,13 +1,22 @@
 ---
-title: "Introduction to languagelayeR"
-author: "Colin FAY"
-date: "`r Sys.Date()`"
-output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{Introduction to languagelayeR}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
+output: github_document
 ---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+languagelayeR is now on [CRAN](https://CRAN.R-project.org/package=languagelayeR)
+
+[![Travis build status](https://travis-ci.org/ColinFay/languagelayeR.svg?branch=master)](https://travis-ci.org/ColinFay/languagelayeR)   [![Coverage status](https://codecov.io/gh/ColinFay/languagelayeR/branch/master/graph/badge.svg)](https://codecov.io/github/ColinFay/languagelayeR?branch=master)
+
 
 # languagelayerR
 
@@ -36,7 +45,6 @@ devtools::install_github("ColinFay/languagelayeR")
 ## How languagelayeR works
 
 The version 1.1.0 works with two functions. Which are :  
-pkgdown::build_site(path = "inst/")
 
 * `get_lang` Get language information from a character string
 
@@ -67,4 +75,7 @@ get_supported_lang(api_key = "your_api_key")
 
 ### Contact
 
-Questions and feedbacks [welcome](mailto:contact@colinfay.me)!
+Questions and feedbacks [welcome](mailto:contact@colinfay.me) !
+
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md).
+By participating in this project you agree to abide by its terms.

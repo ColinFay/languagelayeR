@@ -3,3 +3,10 @@
 ^data-raw$
 ^NEWS\.md$
 ^README\.md$
+^docs$
+^inst/exo$
+^\.travis\.yml$
+^LICENSE\.md$
+^CONDUCT\.md$
+^README\.Rmd$
+^codecov\.yml$

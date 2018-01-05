@@ -6,18 +6,18 @@
 #'@param api_key Your API key.
 #'@return Returns a data.frame with language_code and language_name.
 #'@export
-#'@note Before running a function of this package for the first time, you need to set your API key using the \code{\link{setApiKey}} function.
+#'@note Before running a function of this package for the first time, you need to set your API key.
 #'@examples
 #'get_supported_lang(api_key = "yourapikey")
 
 get_supported_lang <- function(api_key= NULL){
-  . <- NULL
+  stop_if_not(., has_internet, "Please check your internet connexion")
   default <- data.frame(language_code = vector("character"),
                         language_name = vector("character"),
                         stringsAsFactors = FALSE)
   if(is.null(api_key)){
     warning("You need to enter you API key first. Please use the setApiKey function.")
-    identity <- default
+    return(identity) 
   } else {
     url <- GET(paste0("http://apilayer.net/api/languages", "?access_key=", api_key))
     if (url$status_code != 200){
@@ -35,30 +35,16 @@ get_supported_lang <- function(api_key= NULL){
           warning("No Content")
           identity <- default
         } else {
-          identity <- lapply(content, function(obj){
+          identity <- do.call(rbind, lapply(content, function(obj){
             data.frame(language_code = obj$language_code %||% NA,
                        language_name = obj$language_name %||% NA,
                        stringsAsFactors = FALSE)
-          }) %>% do.call(rbind, .)
+          }))
         }
       }
     }
+    return(identity)
   }
-  return(identity)
 }
 
-#' Deprecated version of get_supported_lang
-#' 
-#' This function has been replaced by \code{get_supported_lang}. Will be removed
-#' in the next version of the package.
-#'
-#' @param ... passes args to get_lang. Here for backward compatibility
-#'
-#' @export
-
-
-getSupportedLanguage <- function(...){
-  .Deprecated("get_supported_lang")
-  get_supported_lang(...)
-}
 
