@@ -11,8 +11,7 @@
 #'get_supported_lang(api_key = "yourapikey")
 
 get_supported_lang <- function(api_key= NULL){
-  internet <- has_internet()
-  stop_if_not(.x = internet, msg = "Please check your internet connexion")
+  stop_if_not(.x = has_internet(), msg = "Please check your internet connexion")
   default <- data.frame(language_code = vector("character"),
                         language_name = vector("character"),
                         stringsAsFactors = FALSE)

@@ -16,8 +16,7 @@
 #'get_lang(query = "I really really love R and that's a good thing, right?", api_key = "apikey")
 
 get_lang <- function(query, api_key = NULL){
-  internet <- has_internet()
-  stop_if_not(.x = internet, msg = "Please check your internet connexion")
+  stop_if_not(.x = has_internet(), msg = "Please check your internet connexion")
   default <- data.frame(language_code = vector("character"),
                         language_name = vector("character"),
                         probability = vector("character"),

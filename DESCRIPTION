@@ -1,8 +1,8 @@
 Package: languagelayeR
 Type: Package
 Title: Access the 'languagelayer' API
-Version: 1.2.2
-Date: 2018-01-15
+Version: 1.2.3
+Date: 2018-01-26
 Authors@R: person("Colin", "FAY", email = "contact@colinfay.me", role = c("aut", "cre"))
 Maintainer: Colin FAY <contact@colinfay.me>
 Description: Improve your text analysis with languagelayer
