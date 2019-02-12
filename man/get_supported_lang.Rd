@@ -19,8 +19,10 @@ Get all current available languages on the languagelayer API.
 Returns a data.frame with the available languages.
 }
 \note{
-Before running a function of this package for the first time, you need to set your API key.
+Before running a function of this package for the first time, you need to get your API key.
 }
 \examples{
+\dontrun{
 get_supported_lang(api_key = "yourapikey")
+}
 }

@@ -1,7 +1,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^data-raw$
-^NEWS\.md$
 ^README\.md$
 ^docs$
 ^inst/exo$
